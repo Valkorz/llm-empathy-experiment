@@ -1,0 +1,19 @@
+{
+    "name" : "Haruto",
+    "gender" : "Male",
+    "age" : 62,
+    "ethnicity" : "Asian",
+    "education": "University graduate",
+    "employment": "Senior Executive",
+    "household_size": 2,
+    "housing_ownership": "Owned",
+    "housing_type": "Detached house",
+    "ideology": "Conservative",
+    "income": "¥8-10M",
+    "internet_access": "Fiber Optic",
+    "location": "Tokyo, Japan",
+    "marital_status": "Married",
+    "metro_status": "Urban",
+    "party_id": "LDP",
+    "phone_service": "Smartphone"
+}

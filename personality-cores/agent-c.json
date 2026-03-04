@@ -1,0 +1,19 @@
+{
+    "name" : "Charles",
+    "gender" : "Male",
+    "age" : 45,
+    "ethnicity" : "Black or African American",
+    "education": "Bachelor's degree",
+    "employment": "Self-employed",
+    "household_size": 3,
+    "housing_ownership": "Rented for cash",
+    "housing_type": "Single-family detached house",
+    "ideology": "Liberal",
+    "income": "50-74K",
+    "internet_access": "Mobile Internet",
+    "location": "Georgia",
+    "marital_status": "Divorced",
+    "metro_status": "Non-Metro Area",
+    "party_id": "Strong Democrat",
+    "phone_service": "Landline and Cellphone"
+}

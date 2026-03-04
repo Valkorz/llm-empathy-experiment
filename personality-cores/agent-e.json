@@ -1,0 +1,19 @@
+{
+    "name" : "Edward",
+    "gender" : "Male",
+    "age" : 32,
+    "ethnicity" : "White British",
+    "education": "University degree",
+    "employment": "Employed full-time",
+    "household_size": 2,
+    "housing_ownership": "Mortgaged",
+    "housing_type": "Terraced house",
+    "ideology": "Center-Left",
+    "income": "£40-50K",
+    "internet_access": "High-speed broadband",
+    "location": "London, United Kingdom",
+    "marital_status": "Single",
+    "metro_status": "Urban",
+    "party_id": "Labour",
+    "phone_service": "Mobile only"
+}

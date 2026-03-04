@@ -1,0 +1,19 @@
+{
+    "name" : "Gabriela",
+    "gender" : "Female",
+    "age" : 55,
+    "ethnicity" : "Latina",
+    "education": "Secondary education",
+    "employment": "Small business owner",
+    "household_size": 3,
+    "housing_ownership": "Owned",
+    "housing_type": "Condominium",
+    "ideology": "Socialist",
+    "income": "R$60-80K",
+    "internet_access": "Mobile data",
+    "location": "Sao Paulo, Brazil",
+    "marital_status": "Divorced",
+    "metro_status": "Urban",
+    "party_id": "Workers' Party",
+    "phone_service": "Mobile"
+}

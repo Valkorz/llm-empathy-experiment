@@ -1,4 +1,19 @@
 {
     "name" : "placeholder",
-    "gender" : "male/female"
+    "gender" : "male/female",
+    "age" : 20,
+    "ethnicity" : "White/Black/Asian/Hispanic",
+    "education" : "any",
+    "employment" : "employment_type",
+    "household_size" : 2,
+    "housing_ownership" : "Full_owner/rented/owned_by_someone_else",
+    "housing_type" : "building with [number] apartments/or house",
+    "ideology" : "ideology_[strength]",
+    "income" : "50K",
+    "internet_access" : "internet_household/mobile_data/none",
+    "location" : "country and/or state",
+    "marital_status" : "married/single/divorced",
+    "metro_status" : "metro_area/no_metro",
+    "party_id" : "[strength]_democrat/[strength]_liberal",
+    "phone_service" : "Cellphone only"
 }

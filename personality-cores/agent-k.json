@@ -1,0 +1,19 @@
+{
+    "name" : "Kevin",
+    "gender" : "Male",
+    "age" : 38,
+    "ethnicity" : "Asian-Canadian",
+    "education": "Bachelor's degree",
+    "employment": "Civil Servant",
+    "household_size": 4,
+    "housing_ownership": "Mortgaged",
+    "housing_type": "Semi-detached",
+    "ideology": "Liberal",
+    "income": "CAD 80-90K",
+    "internet_access": "High-speed",
+    "location": "Toronto, Canada",
+    "marital_status": "Married",
+    "metro_status": "Suburban",
+    "party_id": "Liberal Party",
+    "phone_service": "Mobile"
+}

@@ -1,0 +1,19 @@
+{
+    "name" : "Julia",
+    "gender" : "Female",
+    "age" : 25,
+    "ethnicity" : "White",
+    "education": "Vocational training",
+    "employment": "Technician",
+    "household_size": 1,
+    "housing_ownership": "Renting",
+    "housing_type": "Studio Apartment",
+    "ideology": "Green",
+    "income": "€35-40K",
+    "internet_access": "Broadband",
+    "location": "Berlin, Germany",
+    "marital_status": "Single",
+    "metro_status": "Urban",
+    "party_id": "Alliance 90/The Greens",
+    "phone_service": "Mobile"
+}

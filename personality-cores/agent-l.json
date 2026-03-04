@@ -1,0 +1,19 @@
+{
+    "name" : "Liam",
+    "gender" : "Male",
+    "age" : 29,
+    "ethnicity" : "White",
+    "education": "Trade certificate",
+    "employment": "Construction",
+    "household_size": 2,
+    "housing_ownership": "Renting",
+    "housing_type": "Flat",
+    "ideology": "Labor",
+    "income": "AUD 70-80K",
+    "internet_access": "NBN",
+    "location": "Sydney, Australia",
+    "marital_status": "De  facto",
+    "metro_status": "Urban",
+    "party_id": "Labor",
+    "phone_service": "Mobile"
+}

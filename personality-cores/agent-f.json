@@ -1,0 +1,19 @@
+{
+    "name" : "Farhan",
+    "gender" : "Male",
+    "age" : 28,
+    "ethnicity" : "South Asian",
+    "education": "Master's degree",
+    "employment": "Software Engineer",
+    "household_size": 5,
+    "housing_ownership": "Renting",
+    "housing_type": "Apartment",
+    "ideology": "Center-Right",
+    "income": "₹15-20 Lakh",
+    "internet_access": "Fiber Optic",
+    "location": "Mumbai, India",
+    "marital_status": "Married",
+    "metro_status": "Metropolitan",
+    "party_id": "BJP",
+    "phone_service": "Smartphone with data"
+}

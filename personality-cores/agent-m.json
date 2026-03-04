@@ -1,0 +1,19 @@
+{
+    "name" : "Ming",
+    "gender" : "Female",
+    "age" : 34,
+    "ethnicity" : "Han Chinese",
+    "education": "Master's degree",
+    "employment": "Financial Analyst",
+    "household_size": 3,
+    "housing_ownership": "Owned",
+    "housing_type": "High-rise Apartment",
+    "ideology": "Socialist market economy",
+    "income": "¥300-400K",
+    "internet_access": "Fiber",
+    "location": "Shanghai, China",
+    "marital_status": "Married",
+    "metro_status": "Megacity",
+    "party_id": "CPC",
+    "phone_service": "5G Smartphone"
+}

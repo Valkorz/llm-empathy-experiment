@@ -1,0 +1,19 @@
+{
+    "name" : "Diana",
+    "gender" : "Female",
+    "age" : 68,
+    "ethnicity" : "Asian",
+    "education": "High school graduate",
+    "employment": "Retired",
+    "household_size": 1,
+    "housing_ownership": "Owned free and clear",
+    "housing_type": "Mobile home",
+    "ideology": "Conservative",
+    "income": "30-49K",
+    "internet_access": "No Internet Access",
+    "location": "Texas",
+    "marital_status": "Widowed",
+    "metro_status": "Suburban",
+    "party_id": "Republican",
+    "phone_service": "Landline only"
+}

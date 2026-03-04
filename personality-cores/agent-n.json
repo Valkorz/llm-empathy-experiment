@@ -1,0 +1,19 @@
+{
+    "name" : "Natalia",
+    "gender" : "Female",
+    "age" : 42,
+    "ethnicity" : "Mestizo",
+    "education": "Law degree",
+    "employment": "Lawyer",
+    "household_size": 4,
+    "housing_ownership": "Owned",
+    "housing_type": "House",
+    "ideology": "Left-wing",
+    "income": "MXN 40-50K/month",
+    "internet_access": "Broadband",
+    "location": "Mexico City, Mexico",
+    "marital_status": "Married",
+    "metro_status": "Urban",
+    "party_id": "MORENA",
+    "phone_service": "Mobile"
+}

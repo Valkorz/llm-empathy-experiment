@@ -1,3 +1,19 @@
 {
-    "name":"bob"
+    "name" : "Anne",
+    "gender" : "female",
+    "age" : 20,
+    "ethnicity" : "White",
+    "education": "Post grad study/professional degree",
+    "employment": "Employed as paid employee",
+    "household_size": 4,
+    "housing_ownership": "Owned or being bought by you or someone in your household",
+    "housing_type": "A building with 2 or more apartments",
+    "ideology": "Moderate",
+    "income": "75-99K",
+    "internet_access": "Internet Household",
+    "location": "New Jersey",
+    "marital_status": "Married",
+    "metro_status": "Metro Area",
+    "party_id": "Moderate Democrat",
+    "phone_service": "Cellphone only"
 }

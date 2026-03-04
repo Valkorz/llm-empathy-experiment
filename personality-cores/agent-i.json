@@ -1,0 +1,19 @@
+{
+    "name" : "Ibrahim",
+    "gender" : "Male",
+    "age" : 40,
+    "ethnicity" : "Black African",
+    "education": "PhD",
+    "employment": "University Professor",
+    "household_size": 6,
+    "housing_ownership": "Owned",
+    "housing_type": "Duplex",
+    "ideology": "Progressive",
+    "income": "₦12-15M",
+    "internet_access": "4G LTE",
+    "location": "Lagos, Nigeria",
+    "marital_status": "Married",
+    "metro_status": "Urban",
+    "party_id": "APC",
+    "phone_service": "Multiple Mobile Lines"
+}
