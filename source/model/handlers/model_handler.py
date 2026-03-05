@@ -26,35 +26,38 @@ class ModelHandler:
             self.personality_core = None
         pass
 
-    def prompt(self, message : str, scenario : int):
-        #Load data for building a prompt
-        persona = self.personality_handler.ToJson()
-        with open("scenarios/scenarios.json") as f:
-            scenarios = json.load(f)
-            scenario = scenarios[f"scenario_{scenario}"]
-
-        # question = f"Your persona: {persona}\nScenario: {scenario}\nSituation: {message}\n Provide your internal thought process and your final decision."
-        # print(question)
-        question = f"""
-        SETTING: High-stakes life or death moment.
-
-        YOUR PERSONA: {persona}
-
-        TASK: {message}. Provide your internal thought process and your final decision.
-        """
-        client = OpenAI(base_url=f"http://localhost:{self.port}/v1", api_key=self.api_key)
-
-        completion = client.chat.completions.create(
-            model="local-model",
-            messages=[
-                {"role": "system", "content": scenario},
-                {"role": "user", "content": question}
-            ],
-            temperature=0.8, 
-            # response_format={"type": "json_object"} 
-        )
+    def prompt(self, user_message : str, use_persona : bool, system_message : str = ""):
+        try:
+            if use_persona and self.personality_core is None:
+                return "No personality core loaded."
         
-        print(completion.choices[0].message.content)
-        response_content = completion.choices[0].message.content
-        print(f"Agent {self.personality_handler.name} responded: {response_content}")
-        return response_content
+            #Load data for building a prompt
+            if use_persona:
+                persona = self.personality_handler.ToJson()
+
+            context = system_message
+            if use_persona:
+                context = f"""
+                PERSONA: {persona}
+
+                INFO: {system_message}
+                """
+
+            client = OpenAI(base_url=f"http://localhost:{self.port}/v1", api_key=self.api_key)
+
+            completion = client.chat.completions.create(
+                model="local-model",
+                messages=[
+                    {"role": "system", "content": context},
+                    {"role": "user", "content": user_message}
+                ],
+                temperature=0.8, 
+                # response_format={"type": "json_object"} 
+            )
+
+            # print(completion.choices[0].message.content)
+            response_content = completion.choices[0].message.content
+            # print(f"Agent {self.personality_handler.name} responded: {response_content}")
+            return response_content
+        except:
+            return "An unknown error occured."

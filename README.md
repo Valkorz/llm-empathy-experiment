@@ -13,7 +13,7 @@ This project features experimentations with several different challenges, such a
 ---
 ## DATA AND SOURCES
 
-Some of the data used for this experiment has been collected from the [SocSci210 dataset](https://huggingface.co/datasets/socratesft/SocSci210/viewer/default/train), published alongside the paper "Finetuning LLMs for Human Behavior Prediction in Social Science Experiments" (2025) by Akaash Kolluri, Shengguang Wu, Joon Sung Park, and Michael S. Bernstein. 
+Some of the data used for this experiment has been collected from the [SocSci210 dataset](https://huggingface.co/datasets/socratesft/SocSci210/viewer/default/train), published alongside the paper: "Finetuning LLMs for Human Behavior Prediction in Social Science Experiments" (2025) by Akaash Kolluri, Shengguang Wu, Joon Sung Park, and Michael S. Bernstein. 
 
 Models used (downloaded and hosted using [LMStudio](https://lmstudio.ai/)):
 
@@ -21,6 +21,17 @@ Models used (downloaded and hosted using [LMStudio](https://lmstudio.ai/)):
 - `deepseek-r1-distill-llama-8b-abliterated`
 
 ---
+
+## TOOLS USED 
+
+For this experiment, the following tools and libraries were used:
+
+- **LMStudio**: for local AI model hosting.
+- **OpenAI library**: for accessing the locally hosted LMStudio endpoints and passing on specific settings like temperature and response format.
+- **Sentence Transformer**: for locally storing data used for each experiment, serves as a local 'context window'. The sentence transformer will perform lookups on text files and vectorize each chunk of data, which is then passed alongside the prompt during endpoint requests to the AI. `all-MiniLM-L6-v2` was the chosen model for this application.
+
+---
+
 ## RESULTS OBSERVED
 
 During experimentations, the following points were observed:
