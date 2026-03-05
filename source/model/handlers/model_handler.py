@@ -51,7 +51,7 @@ class ModelHandler:
                 {"role": "user", "content": question}
             ],
             temperature=0.8, 
-            response_format={"type": "json_object"} 
+            # response_format={"type": "json_object"} 
         )
         
         print(completion.choices[0].message.content)

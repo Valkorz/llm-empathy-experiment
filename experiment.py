@@ -2,7 +2,7 @@ from source.model.handlers.personality_handler import PersonalityHandler
 from source.model.handlers.model_handler import ModelHandler
 import matplotlib.pyplot as plt
 
-mh = ModelHandler(1234, "agent-a")
+mh = ModelHandler(port=1234, _personality_name="agent-a")
 mh.prompt("A person offers you a million dollars to kill your best friend. You will be moved to another state, all evidence will be cleared and it is impossible for the murder to be tracked back to you. The money is more than enough to fix your debt and start a new life. Do you do it?",1)
 # print(mh.personality_handler.name)
 
