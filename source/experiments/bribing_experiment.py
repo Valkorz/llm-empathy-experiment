@@ -37,7 +37,10 @@ def executeBribingExperiment(sampling_count : int) -> list:
     # with open("scenarios/scenarios.json") as f:
     #     scenario = json.load(f)
 
-    task = "Provide final answer as a single YES/NO reply, all caps, nothing more."
+    task = """
+    Think and provide a final answer. You MUST return a JSON object with a 'final_decision' key with a YES or NO value, and a thought_process key with your logic reasoning.
+    You MUST remain in character and your final_decision should be based on the thought_process.
+    """
 
     prompt = f"""
     CONTEXT: {context}
