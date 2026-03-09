@@ -26,7 +26,7 @@ class ModelHandler:
             self.personality_core = None
         pass
 
-    def prompt(self, user_message : str, use_persona : bool, system_message : str = ""):
+    def prompt(self, user_message : str, use_persona : bool, system_message : str = "") -> dict:
         try:
             if use_persona and self.personality_core is None:
                 return "No personality core loaded."
@@ -52,12 +52,31 @@ class ModelHandler:
                     {"role": "user", "content": user_message}
                 ],
                 temperature=0.8, 
-                # response_format={"type": "json_object"} 
+                    response_format={
+                    "type": "json_schema",
+                    "json_schema": {
+                        "name": "reasoning_response",
+                        "strict": True,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "thought_process": {"type": "string"},
+                                "final_decision": {"type": "string"}
+                            },
+                            # "required": ["thought_process", "final_decision"],
+                            "required": ["final_decision"],
+                            "additionalProperties": False
+                        }
+                    }
+                }
             )
 
             # print(completion.choices[0].message.content)
             response_content = completion.choices[0].message.content
             # print(f"Agent {self.personality_handler.name} responded: {response_content}")
-            return response_content
-        except:
+            response_dict = json.loads(response_content)
+            return response_dict
+        except Exception as e:
+            print(f"Error type: {type(e).__name__}")
+            print(f"Error message: {e}")
             return "An unknown error occured."
