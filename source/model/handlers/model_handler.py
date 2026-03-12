@@ -11,9 +11,10 @@ class ModelHandler:
     personality_core : any
     personality_handler : PersonalityHandler
 
-    def __init__(self, _port : int, _personality_name : str, _api_key : str = "none"):
+    def __init__(self, _port : int, _personality_name : str, _api_key : str = "none", _model_name = "local-model"):
         self.port = _port
         self.api_key = _api_key
+        self.model_name = _model_name
         
         #Parse personality cores JSON
         try:
@@ -46,7 +47,7 @@ class ModelHandler:
             client = OpenAI(base_url=f"http://localhost:{self.port}/v1", api_key=self.api_key)
 
             completion = client.chat.completions.create(
-                model="local-model",
+                model=self.model_name,
                 messages=[
                     {"role": "system", "content": context},
                     {"role": "user", "content": user_message}
@@ -61,10 +62,11 @@ class ModelHandler:
                             "type": "object",
                             "properties": {
                                 "thought_process": {"type": "string"},
-                                "final_decision": {"type": "string"}
+                                "final_decision": {"type": "string"},
+                                # "has_mismatch": {"type": "string"}
                             },
-                            # "required": ["thought_process", "final_decision"],
-                            "required": ["final_decision"],
+                            "required": ["thought_process", "final_decision"],
+                            # "required": ["final_decision"],
                             "additionalProperties": False
                         }
                     }

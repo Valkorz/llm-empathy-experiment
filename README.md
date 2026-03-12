@@ -40,7 +40,7 @@ During experimentations, the following points were observed:
 
 ### EXPERIMENT 1.1: Bribing Experiment Pilot Study
 
-In contrast to Large Language Models, a finding during experimentation is that **empathy and understanding of human emotion is not properly represented by small language models**. This due to the lesser alignment during training. For this pilot study, only one persona was used, namely ``agent-b``. The experimenting session features a randomly changing ``income`` variable, and the test was run for 20 iterations (which is a small sample size).
+In contrast to Large Language Models, a finding during experimentation is that **empathy and understanding of human emotion is not always properly represented by small language models**. This due to the lesser alignment during training. For this pilot study, only one persona was used, namely ``agent-b``. The experimenting session features a randomly changing ``income`` variable, and the test was run for 20 iterations (which is a small sample size).
 The following experiment was done:
 
 1. **Created a hypothetical persona, scenario and task**: Inside ``bribing_experiment.py``, the model is prompted with a fictitious persona (found within the ``/personality-cores`` folder), a hypothetical scenario (eg. 'Life or Death Situation') and a task, in which case: "Display your final answer, do you accept the bribe?".
